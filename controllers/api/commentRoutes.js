@@ -1,7 +1,6 @@
 const router = require('express').Router();
 const { Comment } = require('../../models');
 const withAuth = require('../../utils/auth');
-
 router.get('/', (req, res) => {
   Comment.findAll({})
   .then(commentData => res.json(commentData))
@@ -9,7 +8,6 @@ router.get('/', (req, res) => {
     res.status(500).json(err);
   });
 });
-
 router.get('/:id', (req, res) => {
   Comment.findAll({
     where: {
@@ -21,7 +19,6 @@ router.get('/:id', (req, res) => {
     res.status(500).json(err);
   });
 });
-
 router.post('/', withAuth, async (req, res) => {
   try {
     console.log(req.body);
@@ -34,7 +31,6 @@ router.post('/', withAuth, async (req, res) => {
     res.status(500).json(err.message);
   }
 });
-
 router.delete('/:id', withAuth, async (req, res) => {
   try {
     const commentData = await Comment.destroy({
@@ -52,5 +48,4 @@ router.delete('/:id', withAuth, async (req, res) => {
     res.status(500).json(err);
   }
 });
-
 module.exports = router;
