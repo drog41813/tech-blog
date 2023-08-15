@@ -12,8 +12,8 @@ tech-blog github repo: https://github.com/drog41813/tech-blog
 ## Credits
 The following site assisted in basic and general JS concepts as well as how to operate JS itself using various methods and syntax: https://www.w3schools.com/js/js_syntax.asp
 The following site helped with learning how to set up various JS algorithms as well as how they affected your code as a whole: https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/#basic-javascript
-The following individual's github profile indicates partnership in regards to working together and collaborating/sharing constructive ideas with the password generator webpage: https://github.com/LucasWyski001
-The following individual's github profile indicates partnership in regards to working together and collaborating/sharing constructive ideas with the password generator webpage: https://github.com/micavilla
+The following individual's github profile indicates partnership in regards to working together and collaborating/sharing constructive ideas with the tech blog webpage: https://github.com/LucasWyski001
+The following individual's github profile indicates partnership in regards to working together and collaborating/sharing constructive ideas with the tech blog webpage: https://github.com/micavilla
 
 
 
