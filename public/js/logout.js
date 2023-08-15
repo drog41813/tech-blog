@@ -1,3 +1,4 @@
+// this const will determine all steps and contents to be retrieved when logged out
 const logout = async () => {
     const response = await fetch('/api/users/logout', {
       method: 'POST',

@@ -1,8 +1,8 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
+// init for blog that contains each element that is contained within one
 class Blog extends Model {}
-
 Blog.init(
   {
     id: {

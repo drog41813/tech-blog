@@ -1,3 +1,4 @@
+// will handle all aspects in regards to the dashboard appearance and data that is retrieved and placed into it. 
 const newFormHandler = async (event) => {
     event.preventDefault();
   
@@ -21,6 +22,7 @@ const newFormHandler = async (event) => {
     }
   };
   
+  // used to determine how delete button will function 
   const delButtonHandler = async (event) => {
     if (event.target.hasAttribute('data-id')) {
       const id = event.target.getAttribute('data-id');
@@ -38,6 +40,7 @@ const newFormHandler = async (event) => {
     }
   };
   
+  // used to determine how update button will function 
   const updButtonHandler = async (event) => {
     event.preventDefault();
   

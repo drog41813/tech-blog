@@ -1,5 +1,7 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
+
+// init for comment that contains each element that is contained within one
 class Comment extends Model {}
 Comment.init(
   {

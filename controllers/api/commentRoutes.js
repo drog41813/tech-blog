@@ -1,6 +1,8 @@
 const router = require('express').Router();
 const { Comment } = require('../../models');
 const withAuth = require('../../utils/auth');
+
+// get route for the comments
 router.get('/', (req, res) => {
   Comment.findAll({})
   .then(commentData => res.json(commentData))
@@ -19,6 +21,8 @@ router.get('/:id', (req, res) => {
     res.status(500).json(err);
   });
 });
+
+// post route for the comments
 router.post('/', withAuth, async (req, res) => {
   try {
     console.log(req.body);
@@ -31,6 +35,8 @@ router.post('/', withAuth, async (req, res) => {
     res.status(500).json(err.message);
   }
 });
+
+// delete route for the comments
 router.delete('/:id', withAuth, async (req, res) => {
   try {
     const commentData = await Comment.destroy({
